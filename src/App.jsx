@@ -365,3 +365,25 @@
 //   );
 // };
 // export default App;
+
+
+
+
+
+
+//====================== Dash Board ==============================================
+
+
+
+import React from "react";
+import Statwise from "./dashboard";
+
+const App = () => {
+    return (
+        <>
+        <Statwise/>
+        </>
+    );
+}
+
+export default App;
