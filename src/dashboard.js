@@ -6,7 +6,7 @@ const Statwise = () =>{
     const[data,setdata]=useState([]);
 
     const getCovidData = async () => {
-        const res = await fetch('https://api.openweathermap.org/data/2.5/weather?q=london&appid=99ed8109be9313a5cd83c79def0f7be2&units=metric');
+        const res = await fetch('https://api.covid19india.org/data.json');
         const actualData = await res.json();
         console.log(actualData.statwise);
         setdata(actualData);
@@ -19,7 +19,7 @@ const Statwise = () =>{
          <>
         <div className="container-fluid mt-5">
             <div className="main-heading">
-            <h1 className="mb-5"> <span className="font-weight-bold"> INDIA </span>COVID-19 Dashboard </h1>
+            <h1 className="mb-5" > <span className="font-weight-bold" > INDIA </span>COVID-19 Dashboard </h1>
            </div>
            <div className="table-responsive">
                <table className="table table-hover">
