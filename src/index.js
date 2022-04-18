@@ -2,5 +2,5 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App"
-import Statwise from "./statwise"
+import Statwise from "./dashboard"
 ReactDOM.render(<App/>, document.getElementById("root"));
